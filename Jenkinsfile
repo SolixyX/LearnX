@@ -3,7 +3,7 @@ pipline{
     stages{
         stage("Build"){
             step{
-                echo "Hello world"
+                echo "${env.BUILD_NUMBER}"
             }
         }
     }
